@@ -1,0 +1,149 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: beige;
+}
+
+header {
+  background-color: black;
+  padding: 30px;
+}
+
+.nav-links {
+  display: flex;
+  justify-content: center;
+  gap: 14px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: goldenrod;
+  font-size: 20px;
+  transition: all ease-in-out 2s;
+}
+
+.nav-links a:hover {
+  color: white;
+}
+
+.form-div {
+  margin-top: 40px;
+}
+
+.form1 {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  margin: 0 auto;
+  padding: 20px;
+  border: 3px solid goldenrod;
+  border-radius: 4px;
+}
+
+form input {
+  margin-bottom: 10px;
+  padding: 14px;
+  outline: none;
+}
+
+button {
+  width: 100px;
+  margin-top: 6px;
+  padding: 14px;
+  border: none;
+  border-radius: 10px;
+  background-color: gold;
+  color: white;
+  font-size: 15px;
+  cursor: pointer;
+  transition: all ease 1s;
+}
+
+button:hover {
+  background-color: white;
+  color: gold;
+}
+
+/* getting the users */
+/* user profile */
+.getUser h1 {
+  text-align: center;
+}
+
+.getUser {
+  width: 90%;
+  border-collapse: collapse;
+  border: 1px solid goldenrod;
+  margin: 0 auto;
+  margin-top: 120px;
+  /* margin: 20px auto; */
+}
+
+.getUser th,
+td {
+  border: 3px solid goldenrod;
+  padding: 15px;
+}
+
+.getUser th {
+  height: 30px;
+  font-size: 30px;
+}
+
+.getUser td {
+  text-align: center;
+}
+
+.getUser tr:hover {
+  background-color: #242121a2;
+}
+
+.bi-pen-fill {
+  color: lightblue;
+  font-size: 23px;
+  cursor: pointer;
+}
+
+.bi-book-fill {
+  color: aquamarine;
+  font-size: 23px;
+  cursor: pointer;
+}
+
+.bi-trash3 {
+  color: red;
+  font-size: 23px;
+  cursor: pointer;
+}
+
+/* home page */
+.div1 {
+  height: 100vh;
+  color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* single student */
+.single-student {
+  width: 80%;
+  margin: 80px auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 20px;
+  /* border: 2px solid goldenrod; */
+}
+
+.single-student h1 {
+  text-align: center;
+}
+
+.btn1 {
+  border: none;
+}

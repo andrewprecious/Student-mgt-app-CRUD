@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <%- include('./partials/head') %>
+
+  <body>
+    <%- include('./partials/nav') %>
+    <div class="form-div">
+      <form
+        class="form1"
+        action="/postForm"
+        method="POST"
+        enctype="multipart/form-data"
+      >
+        <input type="text" placeholder="Enter name" name="name" required />
+        <input type="email" placeholder="Enter email" name="email" required />
+        <input
+          type="text"
+          placeholder="Enter your school"
+          name="school"
+          required
+        />
+        <input type="Number" placeholder="Enter your age" name="age" required />
+        <input
+          type="text"
+          placeholder="Enter your class"
+          name="class"
+          required
+        />
+        <input type="file" required name="image" />
+        <textarea name="message" required cols="30" rows="10"></textarea>
+        <button>Login</button>
+      </form>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <!-- head -->
+  <%- include('./partials/head') %>
+  <body>
+    <%- include('./partials/nav') %>
+    <div class="addStudents">
+      <h1>Update <%= students.name %>'s info</h1>
+      <form
+        class="form1"
+        action="/updateStudents/<%= students._id %>?_method=PUT"
+        method="POST"
+        enctype="multipart/form-data"
+      >
+        <input
+          type="text"
+          placeholder="Enter name"
+          value="<%= students.name %>"
+          name="name"
+          required
+        />
+        <input
+          type="email"
+          placeholder="Enter Email"
+          value="<%= students.email %>"
+          name="email"
+          required
+        />
+
+        <input
+          type="text"
+          placeholder="Enter School"
+          value="<%= students.school %>"
+          name="school"
+          required
+        />
+
+        <input
+          type="number"
+          placeholder="Enter Age"
+          value="<%= students.age %>"
+          name="age"
+          required
+        />
+
+        <input
+          type="text"
+          placeholder="Enter Class"
+          value="<%= students.class %>"
+          name="class"
+          required
+        />
+
+        <input type="file" name="image" />
+        <img src="/<%= students.image %>" alt="" width="200px" height="250px" />
+
+        <!-- old image name -->
+        <input type="" name="old_image" value="<%= students.image %>" />
+        <button>Updates Students</button>
+      </form>
+    </div>
+  </body>
+</html>
